@@ -44,7 +44,7 @@ let uploading = () => {
 };
 module.exports = () => {
     uploading();
-    cron.schedule(' * * * *', () => {
+    cron.schedule('* * * * *', () => {
         uploading();
     });
 };
